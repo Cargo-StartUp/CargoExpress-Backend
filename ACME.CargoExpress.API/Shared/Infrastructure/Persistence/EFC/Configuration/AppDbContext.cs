@@ -1,13 +1,13 @@
 ﻿
-using ACME.CargoApp.API.Registration.Domain.Model.Aggregates;
-using ACME.CargoApp.API.Registration.Domain.Model.Entities;
-using ACME.CargoApp.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
-using ACME.CargoApp.API.User.Domain.Model.Aggregates;
-using ACME.CargoApp.API.User.Domain.Model.Entities;
+using ACME.CargoExpress.API.Registration.Domain.Model.Aggregates;
+using ACME.CargoExpress.API.Registration.Domain.Model.Entities;
+using ACME.CargoExpress.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
+using ACME.CargoExpress.API.User.Domain.Model.Aggregates;
+using ACME.CargoExpress.API.User.Domain.Model.Entities;
 using EntityFrameworkCore.CreatedUpdatedDate.Extensions;
 using Microsoft.EntityFrameworkCore;
 
-namespace ACME.CargoApp.API.Shared.Infrastructure.Persistence.EFC.Configuration;
+namespace ACME.CargoExpress.API.Shared.Infrastructure.Persistence.EFC.Configuration;
 
 public class AppDbContext(DbContextOptions options) : DbContext(options)
 {

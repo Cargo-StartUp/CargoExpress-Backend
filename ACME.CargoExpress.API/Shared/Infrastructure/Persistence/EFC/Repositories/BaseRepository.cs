@@ -1,8 +1,8 @@
-﻿using ACME.CargoApp.API.Shared.Domain.Repositories;
-using ACME.CargoApp.API.Shared.Infrastructure.Persistence.EFC.Configuration;
+﻿using ACME.CargoExpress.API.Shared.Domain.Repositories;
+using ACME.CargoExpress.API.Shared.Infrastructure.Persistence.EFC.Configuration;
 using Microsoft.EntityFrameworkCore;
 
-namespace ACME.CargoApp.API.Shared.Infrastructure.Persistence.EFC.Repositories;
+namespace ACME.CargoExpress.API.Shared.Infrastructure.Persistence.EFC.Repositories;
 
 public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
 {

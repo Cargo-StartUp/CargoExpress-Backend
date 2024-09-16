@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace ACME.CargoApp.API.Shared.Interfaces.ASP.Configuration.Extensions;
+namespace ACME.CargoExpress.API.Shared.Interfaces.ASP.Configuration.Extensions;
 
 public static partial class StringExtensions
 {

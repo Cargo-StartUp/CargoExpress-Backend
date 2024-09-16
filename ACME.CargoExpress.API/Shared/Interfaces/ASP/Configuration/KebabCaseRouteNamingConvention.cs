@@ -1,7 +1,7 @@
-﻿using ACME.CargoApp.API.Shared.Interfaces.ASP.Configuration.Extensions;
+﻿using ACME.CargoExpress.API.Shared.Interfaces.ASP.Configuration.Extensions;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
-namespace ACME.CargoApp.API.Shared.Interfaces.ASP.Configuration;
+namespace ACME.CargoExpress.API.Shared.Interfaces.ASP.Configuration;
 
 public class KebabCaseRouteNamingConvention : IControllerModelConvention
 {

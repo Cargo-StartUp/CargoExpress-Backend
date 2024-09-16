@@ -1,6 +1,6 @@
 ﻿using Humanizer;
 
-namespace ACME.CargoApp.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
+namespace ACME.CargoExpress.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 
 public static class StringExtensions
 {

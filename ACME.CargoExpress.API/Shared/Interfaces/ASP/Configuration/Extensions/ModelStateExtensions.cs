@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace ACME.CargoApp.API.Shared.Interfaces.ASP.Configuration.Extensions;
+namespace ACME.CargoExpress.API.Shared.Interfaces.ASP.Configuration.Extensions;
 
 public static class ModelStateExtensions
 {

@@ -1,4 +1,4 @@
-﻿namespace ACME.CargoApp.API.Shared.Domain.Repositories;
+﻿namespace ACME.CargoExpress.API.Shared.Domain.Repositories;
 
 public interface IBaseRepository<TEntity>
 {
