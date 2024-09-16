@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\CURSOS-2024-02\\backend-desplegar\\nosotros\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj": {}
+    "C:\\Users\\Adolfo PC\\Documents\\GitHub\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj": {}
   },
   "projects": {
-    "Z:\\CURSOS-2024-02\\backend-desplegar\\nosotros\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj": {
+    "C:\\Users\\Adolfo PC\\Documents\\GitHub\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\CURSOS-2024-02\\backend-desplegar\\nosotros\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj",
+        "projectUniqueName": "C:\\Users\\Adolfo PC\\Documents\\GitHub\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj",
         "projectName": "ACME.CargoExpress.API",
-        "projectPath": "Z:\\CURSOS-2024-02\\backend-desplegar\\nosotros\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj",
-        "packagesPath": "C:\\Users\\Riva\\.nuget\\packages\\",
-        "outputPath": "Z:\\CURSOS-2024-02\\backend-desplegar\\nosotros\\CargoExpress-Backend\\ACME.CargoExpress.API\\obj\\",
+        "projectPath": "C:\\Users\\Adolfo PC\\Documents\\GitHub\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj",
+        "packagesPath": "C:\\Users\\Adolfo PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Adolfo PC\\Documents\\GitHub\\CargoExpress-Backend\\ACME.CargoExpress.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Riva\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Adolfo PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -63,21 +56,11 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.0-rc.1.24451.1, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[9.0.0-rc.1.24451.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.Relational.Design": {
-              "target": "Package",
-              "version": "[2.0.0-preview1-final, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.0-rc.1.24451.1, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
@@ -143,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Adolfo PC\\.dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
