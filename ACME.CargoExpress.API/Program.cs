@@ -113,7 +113,7 @@ builder.Services.AddSwaggerGen(
             }
         });
     });
-
+builder.Services.AddHealthChecks();
 // Configure Lowercase URLs
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
@@ -189,6 +189,9 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
     app.UseSwaggerUI();
 }
 
+
+
+app.UseHealthChecks("/health");
 app.UseCors("AllowAll");
 // Add Authorization Middleware to Pipeline
 app.UseRequestAuthorization();
