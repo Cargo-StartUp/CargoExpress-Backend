@@ -80,10 +80,5 @@ public class TokenService(IOptions<TokenSettings> tokenSettings) : ITokenService
             var userId = int.Parse(jwtToken.Claims.First(claim => claim.Type == ClaimTypes.Sid).Value);
             return userId;
         }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            return null;
-        }
     }
 }
