@@ -14,7 +14,6 @@ public static class ClientResourceFromEntityAssembler
             entity.Phone,
             entity.Ruc,
             entity.Address,
-            entity.Subscription,
             entity.UserId);
     }
 }

@@ -12,7 +12,6 @@ public static class CreateClientCommandFromResourceAssembler
             resource.Phone,
             resource.Ruc,
             resource.Address,
-            resource.Subscription,
             resource.UserId);
     }
     

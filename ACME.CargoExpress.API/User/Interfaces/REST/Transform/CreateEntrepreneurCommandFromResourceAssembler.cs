@@ -12,7 +12,6 @@ public static class CreateEntrepreneurCommandFromResourceAssembler
             resource.Phone,
             resource.Ruc,
             resource.Address,
-            resource.Subscription,
             resource.UserId, 
             resource.LogoImage);
     }

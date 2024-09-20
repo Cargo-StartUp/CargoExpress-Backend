@@ -17,10 +17,6 @@ public class ClientCommandService(IClientRepository clientRepository, IUserRepos
         {
             throw new ArgumentException("UserId not found.");
         }
-        if (command.Subscription != "Basic" && command.Subscription != "Premium")
-        {
-            throw new ArgumentException("Invalid subscription type. Must be Basic or Premium");
-        }
         // Create the client
         var client = new Client(command, user);
         try
@@ -42,10 +38,6 @@ public class ClientCommandService(IClientRepository clientRepository, IUserRepos
         if (client == null)
         {
             throw new ArgumentException("Client not found.");
-        }
-        if (command.Subscription != "Basic" && command.Subscription != "Premium")
-        {
-            throw new ArgumentException("Invalid subscription type. Must be Basic or Premium");
         }
         // Update the client
         client.Update(command);

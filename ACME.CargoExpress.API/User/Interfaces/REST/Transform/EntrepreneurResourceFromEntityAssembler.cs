@@ -14,7 +14,6 @@ public static class EntrepreneurResourceFromEntityAssembler
            entity.Phone,
            entity.Ruc,
            entity.Address,
-           entity.Subscription,
            entity.UserId, 
            entity.LogoImage);
    }

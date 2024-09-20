@@ -10,13 +10,12 @@ public class Entrepreneur
         User = new IAM.Domain.Model.Aggregates.User();
     }
     
-    public Entrepreneur(string name, string phone, string ruc, string address, string subscription, string logoImage, int userId, IAM.Domain.Model.Aggregates.User user)
+    public Entrepreneur(string name, string phone, string ruc, string address, string logoImage, int userId, IAM.Domain.Model.Aggregates.User user)
     {
         Name = name;
         Phone = phone;
         Ruc = ruc;
         Address = address;
-        Subscription = subscription;
         LogoImage = logoImage;
         UserId = userId;
         User = user;
@@ -28,7 +27,6 @@ public class Entrepreneur
         Phone = command.Phone;
         Ruc = command.Ruc;
         Address = command.Address;
-        Subscription = command.Subscription;
         UserId = command.UserId;
         LogoImage = command.LogoImage;
         User = user;
@@ -40,7 +38,6 @@ public class Entrepreneur
         Phone = command.Phone;
         Ruc = command.Ruc;
         Address = command.Address;
-        Subscription = command.Subscription;
         LogoImage = command.LogoImage;
     }
     
@@ -49,7 +46,6 @@ public class Entrepreneur
     public string Phone { get; set; }
     public string Ruc { get; set; } 
     public string Address { get; set; }
-    public string Subscription { get; set; }
     public IAM.Domain.Model.Aggregates.User User { get; set; }
     public int UserId { get; set; }
     public string LogoImage { get; set; } 
