@@ -35,7 +35,7 @@ public class TokenService(IOptions<TokenSettings> tokenSettings) : ITokenService
         {
             Subject = new ClaimsIdentity(new[]
             {
-                new Claim(ClaimTypes.Sid, user.Id.ToString()),
+                new Claim(ClaimTypes.Sid, $"{user.Id}"),
                 new Claim(ClaimTypes.Name, user.Username)
             }),
             Expires = DateTime.UtcNow.AddDays(7),
