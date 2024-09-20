@@ -4184,19 +4184,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Riva\\.nuget\\packages\\": {}
+    "C:\\Users\\Andre\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\CURSOS-2024-02\\Aplicaciones Moviles\\BACKEND-cargo\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj",
+      "projectUniqueName": "C:\\Users\\Andre\\Documents\\GitHub\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj",
       "projectName": "ACME.CargoExpress.API",
-      "projectPath": "Z:\\CURSOS-2024-02\\Aplicaciones Moviles\\BACKEND-cargo\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj",
-      "packagesPath": "C:\\Users\\Riva\\.nuget\\packages\\",
-      "outputPath": "Z:\\CURSOS-2024-02\\Aplicaciones Moviles\\BACKEND-cargo\\CargoExpress-Backend\\ACME.CargoExpress.API\\obj\\",
+      "projectPath": "C:\\Users\\Andre\\Documents\\GitHub\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj",
+      "packagesPath": "C:\\Users\\Andre\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andre\\Documents\\GitHub\\CargoExpress-Backend\\ACME.CargoExpress.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Riva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4310,7 +4310,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Andre\\.dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
