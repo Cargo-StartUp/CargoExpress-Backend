@@ -185,10 +185,15 @@ using (var scope = app.Services.CreateScope())
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
+    app.UseDeveloperExceptionPage();
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+else
+{
+    app.UseExceptionHandler("/Error");
+    app.UseHsts();
+}
 
 
 app.UseHealthChecks("/health");
