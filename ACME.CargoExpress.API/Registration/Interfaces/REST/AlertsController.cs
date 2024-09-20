@@ -24,8 +24,15 @@ public class AlertsController(IAlertCommandService alertCommandService, IAlertQu
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
-            return BadRequest(new { message = "An error occurred while creating the alert." + e.Message });
+            var exceptionDetails = new
+            {
+                e.Message,
+                e.StackTrace,
+                InnerExceptionMessage = e.InnerException?.Message,
+                InnerExceptionStackTrace = e.InnerException?.StackTrace
+            };
+            Console.WriteLine(exceptionDetails);
+            return BadRequest(new { message = "An error occurred while creating the alert.", details = exceptionDetails });
         }
     }
     

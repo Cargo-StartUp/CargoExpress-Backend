@@ -27,8 +27,15 @@ public class EntrepreneursController (IEntrepreneurQueryService entrepreneurQuer
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
-            return BadRequest(new { message = "An error occurred while creating the entrepreneur. " + e.Message });
+            var exceptionDetails = new
+            {
+                e.Message,
+                e.StackTrace,
+                InnerExceptionMessage = e.InnerException?.Message,
+                InnerExceptionStackTrace = e.InnerException?.StackTrace
+            };
+            Console.WriteLine(exceptionDetails);
+            return BadRequest(new { message = "An error occurred while creating the entrepreneur.", details = exceptionDetails });
         }
     }
     
@@ -63,8 +70,15 @@ public class EntrepreneursController (IEntrepreneurQueryService entrepreneurQuer
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
-            return BadRequest(new { message = "An error occurred while updating the entrepreneur. " + e.Message });
+            var exceptionDetails = new
+            {
+                e.Message,
+                e.StackTrace,
+                InnerExceptionMessage = e.InnerException?.Message,
+                InnerExceptionStackTrace = e.InnerException?.StackTrace
+            };
+            Console.WriteLine(exceptionDetails);
+            return BadRequest(new { message = "An error occurred while updating the entrepreneur.", details = exceptionDetails });
         }
     }
 

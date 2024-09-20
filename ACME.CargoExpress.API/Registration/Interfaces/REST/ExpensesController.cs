@@ -31,8 +31,15 @@ public class ExpensesController(IExpenseCommandService expenseCommandService, IE
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
-            return BadRequest(new { message = "An error occurred while creating the expense. " + e.Message });
+            var exceptionDetails = new
+            {
+                e.Message,
+                e.StackTrace,
+                InnerExceptionMessage = e.InnerException?.Message,
+                InnerExceptionStackTrace = e.InnerException?.StackTrace
+            };
+            Console.WriteLine(exceptionDetails);
+            return BadRequest(new { message = "An error occurred while creating the expense.", details = exceptionDetails });
         }
     }
     
@@ -49,8 +56,15 @@ public class ExpensesController(IExpenseCommandService expenseCommandService, IE
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
-            return BadRequest(new { message = "An error occurred while updating the expense. " + e.Message });
+            var exceptionDetails = new
+            {
+                e.Message,
+                e.StackTrace,
+                InnerExceptionMessage = e.InnerException?.Message,
+                InnerExceptionStackTrace = e.InnerException?.StackTrace
+            };
+            Console.WriteLine(exceptionDetails);
+            return BadRequest(new { message = "An error occurred while updating the expense.", details = exceptionDetails });
         }
     }
     

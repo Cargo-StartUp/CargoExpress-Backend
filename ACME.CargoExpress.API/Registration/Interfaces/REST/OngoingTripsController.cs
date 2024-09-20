@@ -47,10 +47,17 @@ public class OngoingTripsController(IOngoingTripCommandService ongoingTripComman
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
-            return BadRequest(new { message = "An error occurred while updating the ongoing trip. " + e.Message });
+            // Log detailed exception information
+            var exceptionDetails = new
+            {
+                e.Message,
+                e.StackTrace,
+                InnerExceptionMessage = e.InnerException?.Message,
+                InnerExceptionStackTrace = e.InnerException?.StackTrace
+            };
+            Console.WriteLine(exceptionDetails);
+            return BadRequest(new { message = "An error occurred while creating the ongoing trip.", details = exceptionDetails });
         }
-
     }
     
     

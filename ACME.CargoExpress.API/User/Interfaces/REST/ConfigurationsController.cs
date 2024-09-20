@@ -23,8 +23,15 @@ public class ConfigurationsController (IConfigurationQueryService configurationQ
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
-            return BadRequest(new { message = "An error occurred while creating the configuration. " + e.Message });
+            var exceptionDetails = new
+            {
+                e.Message,
+                e.StackTrace,
+                InnerExceptionMessage = e.InnerException?.Message,
+                InnerExceptionStackTrace = e.InnerException?.StackTrace
+            };
+            Console.WriteLine(exceptionDetails);
+            return BadRequest(new { message = "An error occurred while creating the configuration.", details = exceptionDetails });
         }
     }
     
@@ -41,8 +48,15 @@ public class ConfigurationsController (IConfigurationQueryService configurationQ
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
-            return BadRequest(new { message = "An error occurred while updating the configuration. " + e.Message });
+            var exceptionDetails = new
+            {
+                e.Message,
+                e.StackTrace,
+                InnerExceptionMessage = e.InnerException?.Message,
+                InnerExceptionStackTrace = e.InnerException?.StackTrace
+            };
+            Console.WriteLine(exceptionDetails);
+            return BadRequest(new { message = "An error occurred while updating the configuration.", details = exceptionDetails });
         }
 
     }
