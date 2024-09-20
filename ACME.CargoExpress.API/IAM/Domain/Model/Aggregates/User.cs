@@ -16,9 +16,6 @@ public class User(string username, string passwordHash)
 {
     public User() : this(string.Empty, string.Empty)
     {
-        Client = new Client();
-        Entrepreneur = new Entrepreneur();
-        Configuration = new Configuration();
     }
 
     public int Id { get; }

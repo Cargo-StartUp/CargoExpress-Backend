@@ -4,8 +4,6 @@ public class Configuration
 {
     public Configuration()
     {
-        Theme = string.Empty;
-        View = string.Empty;
         User = new IAM.Domain.Model.Aggregates.User();
         AllowDataCollection = false;
         UpdateDataSharing = false;

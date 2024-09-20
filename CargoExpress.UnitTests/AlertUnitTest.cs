@@ -3,7 +3,6 @@ using ACME.CargoExpress.API.Registration.Domain.Repositories;
 using Moq;
 
 namespace CargoExpress.UnitTests;
-
 public class AlertUnitTest
 {
     [Fact]

@@ -1,12 +1,16 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3ac2ccb6_002Daa52_002D48b7_002D96ad_002D902e16213ef4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from UnitTest1.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;ProjectFile&gt;891E7D0F-5899-4643-AD98-F8C4BBC8FC0C/f:UnitTest1.cs&lt;/ProjectFile&gt;&#xD;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=45fdac61_002D7622_002D487c_002Da7c7_002D781b651d591c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UnitTest1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::891E7D0F-5899-4643-AD98-F8C4BBC8FC0C::net8.0::CargoExpress.UnitTests.UnitTest1&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f3ba0662_002D5972_002D46fc_002Dbeda_002Df5371ac9e7c0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UnitTest1 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Project Location="C:\Users\Adolfo PC\Documents\GitHub\CargoExpress-Backend\CargoExpress.UnitTests" Presentation="&amp;lt;CargoExpress.UnitTests&amp;gt;" /&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a935f6b9_002D5fe7_002D4df8_002D8b40_002D3c70bb2d458a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from ClientUnitTest.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;891E7D0F-5899-4643-AD98-F8C4BBC8FC0C/f:ClientUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;891E7D0F-5899-4643-AD98-F8C4BBC8FC0C/f:AlertUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;891E7D0F-5899-4643-AD98-F8C4BBC8FC0C/f:ConfigurationUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;891E7D0F-5899-4643-AD98-F8C4BBC8FC0C/f:DriverUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;891E7D0F-5899-4643-AD98-F8C4BBC8FC0C/f:EntrepreneurUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;891E7D0F-5899-4643-AD98-F8C4BBC8FC0C/f:EvidenceUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;891E7D0F-5899-4643-AD98-F8C4BBC8FC0C/f:ExpenseUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;891E7D0F-5899-4643-AD98-F8C4BBC8FC0C/f:OngoingTripUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;891E7D0F-5899-4643-AD98-F8C4BBC8FC0C/f:TripUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;891E7D0F-5899-4643-AD98-F8C4BBC8FC0C/f:UserUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;891E7D0F-5899-4643-AD98-F8C4BBC8FC0C/f:VehicleUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
