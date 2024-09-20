@@ -22,10 +22,25 @@ namespace ACME.CargoExpress.API.IAM.Interfaces.REST;
 [ApiController]
 [Route("api/v1/[controller]")]
 [Produces(MediaTypeNames.Application.Json)]
-public class UsersController(IUserQueryService userQueryService, IUserCommandService userCommandService, 
-    IClientQueryService clientQueryService, IEntrepreneurQueryService entrepreneurQueryService,
-    IConfigurationQueryService configurationQueryService) : ControllerBase
+public class UsersController : ControllerBase
 {
+    private readonly IUserQueryService _userQueryService;
+    private readonly IUserCommandService _userCommandService;
+    private readonly IClientQueryService _clientQueryService;
+    private readonly IEntrepreneurQueryService _entrepreneurQueryService;
+    private readonly IConfigurationQueryService _configurationQueryService;
+
+    public UsersController(IUserQueryService userQueryService, IUserCommandService userCommandService,
+        IClientQueryService clientQueryService, IEntrepreneurQueryService entrepreneurQueryService,
+        IConfigurationQueryService configurationQueryService)
+    {
+        _userQueryService = userQueryService;
+        _userCommandService = userCommandService;
+        _clientQueryService = clientQueryService;
+        _entrepreneurQueryService = entrepreneurQueryService;
+        _configurationQueryService = configurationQueryService;
+    }
+
     /**
      * <summary>
      *     Get user by id endpoint. It allows to get a user by id
@@ -37,7 +52,7 @@ public class UsersController(IUserQueryService userQueryService, IUserCommandSer
     public async Task<IActionResult> GetUserById(int userId)
     {
         var getUserByIdQuery = new GetUserByIdQuery(userId);
-        var user = await userQueryService.Handle(getUserByIdQuery);
+        var user = await _userQueryService.Handle(getUserByIdQuery);
         var userResource = UserResourceFromEntityAssembler.ToResourceFromEntity(user!);
         return Ok(userResource);
     }
@@ -52,33 +67,33 @@ public class UsersController(IUserQueryService userQueryService, IUserCommandSer
     public async Task<IActionResult> GetAllUsers()
     {
         var getAllUsersQuery = new GetAllUsersQuery();
-        var users = await userQueryService.Handle(getAllUsersQuery);
+        var users = await _userQueryService.Handle(getAllUsersQuery);
         var userResources = users.Select(UserResourceFromEntityAssembler.ToResourceFromEntity);
         return Ok(userResources);
     }
-    
+
     [HttpGet("{userId}/clients")]
     public async Task<IActionResult> GetClientByUserId([FromRoute] int userId)
     {
-        var client = await clientQueryService.Handle(new GetClientByUserIdQuery(userId));
+        var client = await _clientQueryService.Handle(new GetClientByUserIdQuery(userId));
         if (client == null) return NotFound();
         var resource = ClientResourceFromEntityAssembler.ToResourceFromEntity(client);
         return Ok(resource);
     }
-    
+
     [HttpGet("{userId}/entrepreneurs")]
     public async Task<IActionResult> GetEntrepreneurByUserId([FromRoute] int userId)
     {
-        var entrepreneur = await entrepreneurQueryService.Handle(new GetEntrepreneurByUserIdQuery(userId));
+        var entrepreneur = await _entrepreneurQueryService.Handle(new GetEntrepreneurByUserIdQuery(userId));
         if (entrepreneur == null) return NotFound();
         var resource = EntrepreneurResourceFromEntityAssembler.ToResourceFromEntity(entrepreneur);
         return Ok(resource);
     }
-    
+
     [HttpGet("{userId}/configurations")]
     public async Task<IActionResult> GetConfigurationByUserId([FromRoute] int userId)
     {
-        var configuration = await configurationQueryService.Handle(new GetConfigurationByUserIdQuery(userId));
+        var configuration = await _configurationQueryService.Handle(new GetConfigurationByUserIdQuery(userId));
         if (configuration == null) return NotFound();
         var resource = ConfigurationResourceFromEntityAssembler.ToResourceFromEntity(configuration);
         return Ok(resource);
