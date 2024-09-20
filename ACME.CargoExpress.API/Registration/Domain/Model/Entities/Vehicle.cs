@@ -11,8 +11,9 @@ public class Vehicle
         TractorPlate = string.Empty;
         MaxLoad = 0;
         Volume = 0;
+        Trips = new List<Trip>();
     }
-    
+
     public Vehicle(string model, string plate, string tractorPlate, float maxLoad, float volume)
     {
         Model = model;
@@ -20,6 +21,7 @@ public class Vehicle
         TractorPlate = tractorPlate;
         MaxLoad = maxLoad;
         Volume = volume;
+        Trips = new List<Trip>();
     }
     
     public int Id { get; set; }

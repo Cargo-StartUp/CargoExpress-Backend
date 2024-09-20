@@ -8,9 +8,14 @@ public class Client
 {
     public Client()
     {
+        Name = string.Empty;
+        Phone = string.Empty;
+        Ruc = string.Empty;
+        Address = string.Empty;
         User = new IAM.Domain.Model.Aggregates.User();
+        Trips = new List<Trip>();
     }
-    
+
     public Client(string name, string phone, string ruc, string address, int userId, IAM.Domain.Model.Aggregates.User user)
     {
         Name = name;
@@ -19,6 +24,7 @@ public class Client
         Address = address;
         UserId = userId;
         User = user;
+        Trips = new List<Trip>();
     }
     
     public Client(CreateClientCommand command, IAM.Domain.Model.Aggregates.User user)
@@ -29,6 +35,7 @@ public class Client
         Address = command.Address;
         UserId = command.UserId;
         User = user;
+        Trips = new List<Trip>();
     }
     
     public void Update(UpdateClientCommand command)

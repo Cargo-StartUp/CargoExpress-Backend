@@ -5,11 +5,13 @@ public class Configuration
     public Configuration()
     {
         User = new IAM.Domain.Model.Aggregates.User();
+        Theme = string.Empty;
+        View = string.Empty;
         AllowDataCollection = false;
         UpdateDataSharing = false;
     }
-    
-    public Configuration(int userId, string theme, string view, bool allowDataCollection, bool updateDataSharing,  IAM.Domain.Model.Aggregates.User user)
+
+    public Configuration(int userId, string theme, string view, bool allowDataCollection, bool updateDataSharing, IAM.Domain.Model.Aggregates.User user)
     {
         UserId = userId;
         Theme = theme;

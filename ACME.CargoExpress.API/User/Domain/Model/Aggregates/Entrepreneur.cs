@@ -7,9 +7,15 @@ public class Entrepreneur
 {
     public Entrepreneur()
     {
+        Name = string.Empty;
+        Phone = string.Empty;
+        Ruc = string.Empty;
+        Address = string.Empty;
+        LogoImage = string.Empty;
         User = new IAM.Domain.Model.Aggregates.User();
+        Trips = new List<Trip>();
     }
-    
+
     public Entrepreneur(string name, string phone, string ruc, string address, string logoImage, int userId, IAM.Domain.Model.Aggregates.User user)
     {
         Name = name;
@@ -19,8 +25,9 @@ public class Entrepreneur
         LogoImage = logoImage;
         UserId = userId;
         User = user;
+        Trips = new List<Trip>();
     }
-    
+
     public Entrepreneur(CreateEntrepreneurCommand command, IAM.Domain.Model.Aggregates.User user)
     {
         Name = command.Name;
@@ -30,6 +37,7 @@ public class Entrepreneur
         UserId = command.UserId;
         LogoImage = command.LogoImage;
         User = user;
+        Trips = new List<Trip>();
     }
     
     public void Update(UpdateEntrepreneurCommand command)

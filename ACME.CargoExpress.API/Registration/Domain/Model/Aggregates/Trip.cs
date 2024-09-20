@@ -17,10 +17,13 @@ public class Trip
         Vehicle = new Vehicle();
         Client = new Client();
         Entrepreneur = new Entrepreneur();
+        Expense = new Expense();
+        Evidence = new Evidence();
+        Alerts = new List<Alert>();
+        OngoingTrip = new OngoingTrip();
     }
-    
-    
-    public Trip(string name, string type, int weight, string loadLocation, DateTime loadDate, string unloadLocation, DateTime unloadDate, 
+
+    public Trip(string name, string type, int weight, string loadLocation, DateTime loadDate, string unloadLocation, DateTime unloadDate,
         int driverId, int vehicleId, int clientId, int entrepreneurId, Driver driver, Vehicle vehicle, Client client, Entrepreneur entrepreneur)
     {
         Name = new Name(name);
@@ -34,7 +37,12 @@ public class Trip
         Vehicle = vehicle;
         Client = client;
         Entrepreneur = entrepreneur;
+        Expense = new Expense();
+        Evidence = new Evidence();
+        Alerts = new List<Alert>();
+        OngoingTrip = new OngoingTrip();
     }
+
     public Trip(CreateTripCommand command, Driver driver, Vehicle vehicle, Client client, Entrepreneur entrepreneur)
     {
         Name = new Name(command.Name);
@@ -44,6 +52,10 @@ public class Trip
         Vehicle = vehicle;
         Client = client;
         Entrepreneur = entrepreneur;
+        Expense = new Expense();
+        Evidence = new Evidence();
+        Alerts = new List<Alert>();
+        OngoingTrip = new OngoingTrip();
     }
     
     public int Id { get; set; }

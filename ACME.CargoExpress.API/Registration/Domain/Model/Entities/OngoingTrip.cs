@@ -11,8 +11,9 @@ public class OngoingTrip
         Longitude = 0;
         Speed = 0;
         Distance = 0;
+        Trip = new Trip();
     }
-    
+
     public OngoingTrip(float latitude, float longitude, int speed, int distance, int tripId, Trip trip)
     {
         Latitude = latitude;
@@ -22,7 +23,7 @@ public class OngoingTrip
         TripId = tripId;
         Trip = trip;
     }
-    
+
     public OngoingTrip(CreateOngoingTripCommand command, Trip trip)
     {
         Latitude = command.Latitude;
@@ -31,7 +32,7 @@ public class OngoingTrip
         Distance = command.Distance;
         Trip = trip;
     }
-    
+
     public int Id { get; set; }
     public float Latitude { get; set; }
     public float Longitude { get; set; }
