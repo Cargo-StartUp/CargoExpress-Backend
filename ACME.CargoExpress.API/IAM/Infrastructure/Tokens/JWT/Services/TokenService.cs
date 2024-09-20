@@ -82,7 +82,16 @@ public class TokenService(IOptions<TokenSettings> tokenSettings) : ITokenService
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            try
+            {
+                // Intentar imprimir la excepción
+                Console.WriteLine(e.ToString());
+            }
+            catch
+            {
+                // Si falla, imprimir un mensaje genérico
+                Console.WriteLine("An exception occurred, but it could not be converted to a string.");
+            }
             return null;
         }
     }
