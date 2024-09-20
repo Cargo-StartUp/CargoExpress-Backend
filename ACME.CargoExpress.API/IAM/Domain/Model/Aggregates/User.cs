@@ -14,6 +14,7 @@ namespace ACME.CargoExpress.API.IAM.Domain.Model.Aggregates;
  */
 public class User(string username, string passwordHash)
 {
+    
     public User() : this(string.Empty, string.Empty)
     {
     }
@@ -49,9 +50,9 @@ public class User(string username, string passwordHash)
         return this;
     }
     
-    public Client Client { get; internal set; }
+    public Client? Client { get; internal set; }
     
-    public Entrepreneur Entrepreneur { get; internal set; }
+    public Entrepreneur? Entrepreneur { get; internal set; }
     
-    public Configuration Configuration { get; internal set; }
+    public Configuration? Configuration { get; internal set; }
 }
