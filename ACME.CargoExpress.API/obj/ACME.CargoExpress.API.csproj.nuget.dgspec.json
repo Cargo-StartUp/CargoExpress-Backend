@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj": {}
+    "C:\\Users\\Adolfo PC\\Documents\\GitHub\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj": {}
   },
   "projects": {
-    "C:\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj": {
+    "C:\\Users\\Adolfo PC\\Documents\\GitHub\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj",
+        "projectUniqueName": "C:\\Users\\Adolfo PC\\Documents\\GitHub\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj",
         "projectName": "ACME.CargoExpress.API",
-        "projectPath": "C:\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj",
-        "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
-        "outputPath": "C:\\CargoExpress-Backend\\ACME.CargoExpress.API\\obj\\",
+        "projectPath": "C:\\Users\\Adolfo PC\\Documents\\GitHub\\CargoExpress-Backend\\ACME.CargoExpress.API\\ACME.CargoExpress.API.csproj",
+        "packagesPath": "C:\\Users\\Adolfo PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Adolfo PC\\Documents\\GitHub\\CargoExpress-Backend\\ACME.CargoExpress.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\erick\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Adolfo PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -141,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\erick\\.dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Adolfo PC\\.dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
